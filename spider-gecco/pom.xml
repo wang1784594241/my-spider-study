@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>my-spider-study</artifactId>
+        <groupId>com.mww</groupId>
+        <version>1.0</version>
+        <relativePath>../spider-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>spider-gecco</artifactId>
+    <packaging>jar</packaging>
+
+    <name>spider-gecco</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.geccocrawler</groupId>
+            <artifactId>gecco</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mww</groupId>
+            <artifactId>spider-common</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <!-- <dependency>
+             <groupId>com.geccocrawler</groupId>
+             <artifactId>gecco-htmlunit</artifactId>
+             <version>1.0.9</version>
+         </dependency>-->
+    </dependencies>
+</project>
