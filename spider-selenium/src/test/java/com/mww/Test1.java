@@ -39,16 +39,17 @@ public class Test1 {
         System.setProperty("webdriver.chrome.driver", Test1.class.getClassLoader().getResource("chromedriver.exe").getPath());
     }
 
+    @Test
+    public void quit() throws Exception {
+        driver.quit();
+    }
+
     @After
     public void afterMethod() {
 
         System.out.println("Page title is: " + driver.getTitle());
         driver.manage().window().maximize();
-
-//        driver.quit();
-//        for (int i = 0; i < 100; i++) {
-//            js.executeScript("alert('自动执行的js')");
-//        }
+        driver.quit();
     }
 
     @Test

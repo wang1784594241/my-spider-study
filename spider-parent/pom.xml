@@ -29,6 +29,8 @@
         <module>../spider-gecco</module>
         <module>../spider-webcollector</module>
         <module>../spider-selenium</module>
+        <module>../spider-htmlunit</module>
+        <module>../spider-webmagic</module>
     </modules>
 
   <!--  <repositories>

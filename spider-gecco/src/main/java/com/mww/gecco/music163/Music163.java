@@ -8,8 +8,7 @@ import com.geccocrawler.gecco.spider.HtmlBean;
 /**
  * Created by Administrator on 2017/12/21.
  */
-@Gecco(matchUrl = "http://music.163.com/discover/toplist", pipelines = "music163pipeline",
-downloader="htmlUnitDownloder")
+@Gecco(matchUrl = "http://music.163.com/discover/toplist", pipelines = "music163pipeline")
 public class Music163 implements HtmlBean{
 
     @HtmlField(cssPath = "#song-list-pre-cache textarea")

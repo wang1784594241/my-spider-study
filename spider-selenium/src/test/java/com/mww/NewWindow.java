@@ -16,7 +16,7 @@ public class NewWindow {
       
     @BeforeClass
     public static void before(){
-        System.setProperty("webdriver.chrome.driver", Test1.class.getClassLoader().getResource("chromedriver.exe").getPath());
+//        System.setProperty("webdriver.chrome.driver", Test1.class.getClassLoader().getResource("chromedriver.exe").getPath());
         driver=new ChromeDriver();
         driver.get("https://www.baidu.com");  
         driver.manage().window().maximize();  
@@ -24,9 +24,14 @@ public class NewWindow {
     }  
     @AfterClass
     public static void after(){  
-//        driver.quit();
-    }  
-      
+        driver.quit();
+    }
+
+    @Test
+    public void name() throws Exception {
+        driver.quit();
+    }
+
     @Test
     public void getWindowMethod1() throws Exception{
         String url = "http://www.sina.com.cn";
