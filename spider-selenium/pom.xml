@@ -9,7 +9,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spider-selenium</artifactId>
-    <packaging>jar</packaging>
 
     <name>spider-selenium</name>
     <url>http://maven.apache.org</url>
